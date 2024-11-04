@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Meow+Script&display=swap');
+
+html {
+    font-family: 'Faustina', serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#topbar {
+    background-color: darkorange;
+    border-bottom: 1px solid black;
+    color: black;
+    display: flex;
+}
+
+h1 > a {
+    color: black;
+    text-decoration: none;
+    font-family: "Meow Script", cursive;
+    font-style: normal;
+    font-size: 1em;
+}
+
+h1::first-letter {
+    background-color: black;
+    color: white;
+    padding: 0.1em 0.3em;
+    margin: 0.2em;
+    border-radius: 50%;
+}
+
+nav ol {
+    list-style-type: none;
+    padding: 1em;
+    display: flex;
+}
+
+nav > ol > li > a {
+    color: inherit;
+    padding: 1em;
+    text-decoration: none;
+    font-size: larger;
+}
+nav > ol > li > a:hover {
+    color: white;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding-bottom: 24%;
+}
+
+.card {
+    background-color: rgb(222, 220, 220);
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.card img {
+    align-self: center;
+    width: 60%;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: 0.3em 0.3em 0.3em black;
+    opacity: 0.8;
+}
+.card img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.card button {
+    background-color: darkorange;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: auto;
+    cursor: pointer;
+}
+.card button:hover {
+    background-color: rgb(119, 88, 26);
+    color: white;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 1%;
+    background-color: darkorange;
+    position: fixed;
+    bottom: 0;
+}
+
+footer div {
+    background-color: darkorange;
+    display: flex;
+}
+
+#mission {
+    width: 50%;
+    padding-left: 1em;
+}
+
+#cc {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: .8em;
+    height: 2em;
+    margin-bottom: 0;
+}
+
+footer ol {
+    list-style-type: none;
+    display: flex;
+    margin-left: -2em;
+    width: 50%;
+}
+
+#connect {
+    width: 50%;
+    padding-left: 1em;
+}
+
+footer ol li {
+    width: 10%;
+    padding-right: 1em;
+    background: none;
+    opacity: 100%;
+}
+footer ol li:hover {
+    filter: brightness(0) saturate(100%) invert(20%) sepia(95%) saturate(6523%) hue-rotate(246deg) brightness(82%) contrast(129%);
+}
